@@ -77,7 +77,7 @@ Volume Binding | -v [HostPath]:[GuestPath] | docker run -d --name t2 -v $PWD/mya
 	!DOCTYPE html>
 	<html>
 	<head>
-	<style "type=text/css">
+	<style type="text/css">
 	body{
 	margin: 0px;
 	padding: 0px;
