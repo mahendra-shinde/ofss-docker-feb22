@@ -98,3 +98,19 @@ CMD ["Hello World"]
     docker rm t1
     docker rmi java-app
     ```
+
+## Push to Registry
+
+1. You need to LOGIN into registry (Login is persistent )
+
+    ```
+    docker login REGISTRY-URL -uUSERNAME -pPASSWORD 
+    ```
+
+2.  TAG your image with either DOCKERID or REGISTRY URL
+
+    ```
+    docker tag java-app mahendrshinde/java-app
+    docker push mahendrshinde/java-app
+    ```
+
