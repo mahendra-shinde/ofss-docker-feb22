@@ -63,6 +63,9 @@ docker-compose exec | Older: docker-compose exec SERVICE SHELL Newer: docker-com
 1.  Login in https://labs.play-with-docker.com with docker-id
 1.  Click on Wrench button to choose cluster template: "1 manager with 1 Worker"
 1.  Use "manager1" and clone the project
+
+    > Use 'SHIT+INS' to paste !
+
     ```
     git clone https://github.com/mahendra-shinde/docker-compose-demos
     cd docker-compose-demo/demo1
