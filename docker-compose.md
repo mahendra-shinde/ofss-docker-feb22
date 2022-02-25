@@ -48,3 +48,29 @@ services:
     docker-compose up -d
     docker-compose ps
     ```
+### Compose commands
+
+Command | Description
+--------|-----------
+docker-compose config | Verify the syntax of docker-compose
+docker-compose up | Start all the containers, volumes and network, use -d switch daemon mode
+docker-compose ps | List all the containers from compose file.
+docker-compose exec | Older: docker-compose exec SERVICE SHELL Newer: docker-compose SERVICENAME -- SHELL
+
+
+### On Swarm Cluster
+
+1.  Login in https://labs.play-with-docker.com with docker-id
+1.  Click on Wrench button to choose cluster template: "1 manager with 1 Worker"
+1.  Use "manager1" and clone the project
+    ```
+    git clone https://github.com/mahendra-shinde/docker-compose-demos
+    cd docker-compose-demo/demo1
+    ```
+
+1.  Deploy the application
+
+    ```
+    docker stack deploy --compose-file docker-compose.yml proj1
+    docker stack ps proj1
+    ```
